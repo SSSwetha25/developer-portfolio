@@ -1,29 +1,28 @@
-export default function Home() {
+export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 py-20 bg-gradient-to-tr from-indigo-100 to-blue-200 dark:from-gray-900 dark:to-gray-800 transition-colors">
-      <div className="max-w-3xl">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-4">
-          Crafting the Web, One Pixel at a Time
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-tr from-indigo-200 via-sky-200 to-blue-300 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors px-6 py-20 overflow-hidden">
+      
+      {/* Background shapes */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-[-100px] left-[-100px] w-[300px] h-[300px] bg-blue-400 rounded-full opacity-20 blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-[-100px] right-[-100px] w-[300px] h-[300px] bg-indigo-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
+      </div>
+
+      {/* Glassmorphism Card */}
+      <div className="relative z-10 max-w-3xl w-full bg-white/30 dark:bg-gray-900/30 backdrop-blur-md border border-white/20 dark:border-gray-700/40 shadow-2xl rounded-3xl p-10 text-center">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-6 drop-shadow-lg tracking-tight">
+          Crafting the Web, <br className="hidden md:block" />
+          <span className="text-blue-600 dark:text-blue-400">One Pixel at a Time</span>
         </h1>
-        <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8">
-          I'm a web developer passionate about building responsive, user-friendly, and creative interfaces that stand out.
+        <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-10 max-w-xl mx-auto">
+          I'm a web developer passionate about building clean, responsive, and creative interfaces that leave a lasting impression.
         </p>
         <a
           href="#projects"
-          className="inline-block px-8 py-3 bg-blue-600 text-white text-lg font-medium rounded-xl hover:bg-blue-700 transition-all"
+          className="inline-block px-10 py-3 bg-blue-600 text-white text-lg font-semibold rounded-xl shadow-lg hover:scale-105 hover:bg-blue-700 dark:hover:bg-blue-500 transform transition-all duration-300"
         >
-          View My Work
+          🚀 View My Work
         </a>
-      </div>
-
-      {/* Optional subtle background graphic */}
-      <div className="absolute bottom-4 right-4 opacity-10">
-        <svg width="100" height="100" viewBox="0 0 24 24" fill="none">
-          <path
-            d="M12 2L2 7l10 5 10-5-10-5zm0 7l10 5-10 5-10-5 10-5zm0 7l10 5-10 5-10-5 10-5z"
-            fill="currentColor"
-          />
-        </svg>
       </div>
     </section>
   );
