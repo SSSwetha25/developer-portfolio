@@ -3,19 +3,19 @@ const projects = [
     title: "Smart Waste Bin",
     description: "A sensor-based waste bin that segregates waste and includes a composting unit.",
     tech: ["ESP32", "Edge Impulse", "Python", "C++"],
-    link: "#",
+    link: "https://github.com/SSSwetha25/smart-waste-segregation-system.git",
   },
   {
     title: "AI Chatbot with Sign Language Input",
     description: "A real-time chatbot that can take users input in text as well as sign language form.",
     tech: ["APIs", "React", "Tensorflow"],
-    link: "#",
+    link: "https://github.com/SSSwetha25/asl-chatbot.git",
   },
   {
     title: "Task Manager",
     description: "A to-do list app with drag & drop, persistent storage, and dark mode.",
     tech: ["React", "Tailwind", "localStorage"],
-    link: "#",
+    link: "https://github.com/SSSwetha25/To-Do-App.git",
   },
 ];
 
