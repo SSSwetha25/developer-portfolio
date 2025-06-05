@@ -1,6 +1,6 @@
 // src/pages/Home.jsx or inside your landing section
 import { ArrowRight } from "lucide-react";
-
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <section className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-6 py-20 bg-gradient-to-br from-white via-blue-50 to-blue-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors">
@@ -12,12 +12,12 @@ export default function Home() {
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6">
           A passionate Web Developer who loves crafting sleek, responsive, and user-friendly websites.
         </p>
-        <a
-          href="#projects"
-          className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-blue-700 transition-all"
-        >
+        <Link
+  to="Projects.jsx"
+  className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-blue-700 transition-all"
+>
           View My Work <ArrowRight className="ml-2 w-5 h-5" />
-        </a>
+        </Link>
       </div>
 
       {/* Image / Illustration */}
