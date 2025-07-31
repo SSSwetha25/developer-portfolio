@@ -10,15 +10,15 @@ export default function Hero() {
 
       {/* Glassmorphism Card */}
       <div className="relative z-10 max-w-3xl w-full bg-white/30 dark:bg-gray-900/30 backdrop-blur-md border border-white/20 dark:border-gray-700/40 shadow-2xl rounded-3xl p-10 text-center">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-6 drop-shadow-lg tracking-tight">
-          Crafting the Web, <br className="hidden md:block" />
-          <span className="text-blue-600 dark:text-blue-400">One Pixel at a Time</span>
+        
+        <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-gray-900 dark:text-white">
+          Hi, I'm <span className="text-blue-600 dark:text-blue-400">Swetha</span>
         </h1>
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-10 max-w-xl mx-auto">
           I'm a web developer passionate about building clean, responsive, and creative interfaces that leave a lasting impression.
         </p>
         <a
-          href="#projects"
+          href="/projects"
           className="inline-block px-10 py-3 bg-blue-600 text-white text-lg font-semibold rounded-xl shadow-lg hover:scale-105 hover:bg-blue-700 dark:hover:bg-blue-500 transform transition-all duration-300"
         >
           🚀 View My Work
