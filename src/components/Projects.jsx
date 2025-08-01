@@ -23,7 +23,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen pt-32 pb-24 px-4 sm:px-6 bg-gradient-to-tr from-indigo-100 via-sky-100 to-blue-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors"
+      className="relative min-h-screen flex items-center justify-center bg-gradient-to-tr from-indigo-200 via-sky-200 to-blue-300 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors px-6 py-20 overflow-hidden"
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-extrabold text-center text-gray-900 dark:text-white mb-14 drop-shadow-sm">
