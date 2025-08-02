@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-tr from-indigo-200 via-sky-200 to-blue-300 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors px-6 py-20 overflow-hidden">
@@ -9,11 +11,21 @@ export default function Hero() {
       </div>
 
       {/* Glassmorphism Card */}
-      <div className="relative z-10 max-w-3xl w-full bg-white/30 dark:bg-gray-900/30 backdrop-blur-md border border-white/20 dark:border-gray-700/40 shadow-2xl rounded-3xl p-10 text-center">
+      <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className="relative z-10 max-w-3xl w-full bg-white/30 dark:bg-gray-900/30 backdrop-blur-md border border-white/20 dark:border-gray-700/40 shadow-2xl rounded-3xl p-10 text-center"
+>
+
         
         <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-gray-900 dark:text-white">
           Hi, I'm <span className="text-blue-600 dark:text-blue-400">Swetha</span>
         </h1>
+        <p className="text-sm uppercase tracking-widest text-blue-500 dark:text-blue-400 mb-2">
+  Frontend Developer • UI/UX Enthusiast • Learner
+</p>
+
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-10 max-w-xl mx-auto">
           I'm a web developer passionate about building clean, responsive, and creative interfaces that leave a lasting impression.
         </p>
@@ -23,7 +35,7 @@ export default function Hero() {
         >
           🚀 View My Work
         </a>
-      </div>
+      </motion.div>
     </section>
   );
 }

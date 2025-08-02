@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -34,7 +35,11 @@ export default function Contact() {
       </div>
 
       {/* Glassmorphism Contact Card */}
-      <div className="relative z-10 w-full max-w-2xl bg-white/30 dark:bg-gray-900/30 backdrop-blur-md border border-white/20 dark:border-gray-700/40 shadow-2xl rounded-3xl p-10 text-center">
+      <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }} 
+      className="relative z-10 w-full max-w-2xl bg-white/30 dark:bg-gray-900/30 backdrop-blur-md border border-white/20 dark:border-gray-700/40 shadow-2xl rounded-3xl p-10 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 drop-shadow-lg">
           Let's Connect
         </h2>
@@ -80,7 +85,7 @@ export default function Contact() {
             Thanks for reaching out! I’ll get back to you soon 💌
           </p>
         )}
-      </div>
+      </motion.div>
     </section>
   );
 }

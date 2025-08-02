@@ -1,7 +1,13 @@
+import { motion } from "framer-motion";
+
 export default function About() {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-tr from-indigo-200 via-sky-200 to-blue-300 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 px-6 py-20 transition-colors">
-      <div className="max-w-4xl w-full bg-white/30 dark:bg-gray-900/30 backdrop-blur-md border border-white/20 dark:border-gray-700/40 shadow-2xl rounded-3xl p-10 text-gray-800 dark:text-gray-100">
+      <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+      className="max-w-4xl w-full bg-white/30 dark:bg-gray-900/30 backdrop-blur-md border border-white/20 dark:border-gray-700/40 shadow-2xl rounded-3xl p-10 text-gray-800 dark:text-gray-100">
         <h2 className="text-4xl font-extrabold mb-6 border-b-2 border-blue-500 inline-block text-gray-900 dark:text-white">
           About Me
         </h2>
@@ -19,7 +25,7 @@ export default function About() {
             This portfolio is a work in progress — just like me! I'm actively seeking internships or projects where I can grow, collaborate, and contribute meaningfully as a developer.
           </p>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

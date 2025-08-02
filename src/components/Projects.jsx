@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const projects = [
   {
     title: "Smart Waste Bin",
@@ -17,6 +19,7 @@ const projects = [
     tech: ["React", "Tailwind", "localStorage"],
     link: "https://github.com/SSSwetha25/To-Do-App.git",
   },
+  
 ];
 
 export default function Projects() {
@@ -25,11 +28,16 @@ export default function Projects() {
       id="projects"
       className="relative min-h-screen flex items-center justify-center bg-gradient-to-tr from-indigo-200 via-sky-200 to-blue-300 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors px-6 py-20 overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto">
+      <motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+      className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-extrabold text-center text-gray-900 dark:text-white mb-14 drop-shadow-sm">
           Projects
         </h2>
-        <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div className=
+        "grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -62,7 +70,7 @@ export default function Projects() {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
