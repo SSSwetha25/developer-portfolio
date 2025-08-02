@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import { Github, Linkedin, Twitter } from "lucide-react";
+
+
 
 export default function Hero() {
   return (
@@ -33,8 +36,37 @@ export default function Hero() {
           href="/projects"
           className="inline-block px-10 py-3 bg-blue-600 text-white text-lg font-semibold rounded-xl shadow-lg hover:scale-105 hover:bg-blue-700 dark:hover:bg-blue-500 transform transition-all duration-300"
         >
-          🚀 View My Work
+          <b>View My Work</b> 
         </a>
+        <div className="flex justify-center space-x-6 mt-6">
+  <a
+    href="https://github.com/SSSwetha25"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+  >
+    <Github className="w-6 h-6 text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors duration-300" />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/swetha-s-s-63b3122b1/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+  >
+    <Linkedin className="w-6 h-6 text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors duration-300" />
+  </a>
+
+  <a
+    href="/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Twitter"
+  >
+    <Twitter className="w-6 h-6 text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-colors duration-300" />
+  </a>
+</div>
+
       </motion.div>
     </section>
   );
