@@ -3,11 +3,13 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
     const data = new FormData(form);
+    setIsSubmitting(true);
 
     const response = await fetch("https://formspree.io/f/mqaqavdy", {
       method: "POST",
@@ -16,6 +18,7 @@ export default function Contact() {
         Accept: "application/json",
       },
     });
+    setIsSubmitting(false);
 
     if (response.ok) {
       form.reset();
@@ -72,11 +75,12 @@ export default function Contact() {
             required
             className="w-full px-4 py-3 rounded-xl bg-white/60 dark:bg-white/10 text-gray-900 dark:text-white placeholder-gray-600 dark:placeholder-gray-400 border border-white/30 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
           />
-          <button
+          <button disabled={isSubmitting}
             type="submit"
             className="mt-4 w-full bg-blue-600 hover:bg-blue-700 dark:hover:bg-blue-500 text-white font-semibold py-3 rounded-xl transition-all shadow-lg hover:scale-105"
-          >
-            Send Message 
+          >  {isSubmitting ? 'Sending...' : 'Send Message'}
+
+            
           </button>
         </form>
 
