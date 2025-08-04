@@ -24,6 +24,27 @@ export default function About() {
           <p>
             This portfolio is a work in progress — just like me! I'm actively seeking internships or projects where I can grow, collaborate, and contribute meaningfully as a developer.
           </p>
+          <div className="mt-8 flex flex-wrap gap-3 justify-center text-sm">
+  {[
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'Tailwind CSS',
+    'Git',
+    'GitHub',
+    'Figma'
+  ].map((skill) => (
+    <span
+      key={skill}
+      className="px-3 py-1 bg-blue-100 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-full shadow-sm"
+    >
+      {skill}
+    </span>
+  ))}
+</div>
+
         </div>
       </motion.div>
     </section>
