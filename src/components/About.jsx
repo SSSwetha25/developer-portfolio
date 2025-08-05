@@ -13,17 +13,15 @@ export default function About() {
         </h2>
 
         <div className="space-y-6 text-lg leading-relaxed">
-          <p>
-            Hello! I’m a passionate and curious web developer currently exploring the world of modern frontend development.
-            I love building clean, responsive, and user-friendly interfaces — and I enjoy learning new technologies as I go.
-          </p>
-          <p>
-            I have experience working with <span className="text-blue-700 dark:text-blue-400 font-medium">HTML, CSS, JavaScript, React,</span> and <span className="text-blue-700 dark:text-blue-400 font-medium">Tailwind CSS</span>.
-            I’m always up for a challenge and love solving real-world problems through code.
-          </p>
-          <p>
-            This portfolio is a work in progress — just like me! I'm actively seeking internships or projects where I can grow, collaborate, and contribute meaningfully as a developer.
-          </p>
+          <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+  I'm a Computer Science undergraduate driven by a strong interest in software development, particularly in web technologies. I enjoy building efficient, scalable, and user-focused applications using modern tools and frameworks.
+</p>
+<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+  My focus has been on mastering frontend technologies like React, TypeScript, and Tailwind CSS, while also gaining hands-on experience with backend tools, version control systems, and deployment workflows. I continuously work on projects that challenge me to apply core development principles and explore real-world use cases.
+</p>
+<p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+  I'm currently expanding my understanding of full-stack development, contributing to open-source when possible, and staying up-to-date with the latest trends in the tech ecosystem. I value clean code, continuous learning, and building things that work well and solve problems.
+</p>
           <div className="mt-8 flex flex-wrap gap-3 justify-center text-sm">
   {[
     'HTML',
