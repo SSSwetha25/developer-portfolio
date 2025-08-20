@@ -1,5 +1,9 @@
 import { motion } from "framer-motion";
 
+import aslbot from "../assets/asl-chatbot-image.png";
+import skswap from "../assets/skillswap.png";
+import smartbin from "../assets/smartbin.png";
+
 const projects = [
  
   {
@@ -7,25 +11,29 @@ const projects = [
     description: "A real-time chatbot that can take users input in text as well as sign language form.",
     tech: ["APIs", "React", "Tensorflow"],
     link: "https://github.com/SSSwetha25/asl-chatbot.git",
+     image: aslbot, 
   },
   {
     title: "Skill Swap Platform",
     description: "A skill exchange web app where users list offered/wanted skills, request swaps, and get feedback.",
     tech: [ "React"],
     link: "https://github.com/SSSwetha25/skill-swap-platform.git",
+     image: skswap, 
   },
    {
     title: "Smart Waste Bin",
     description: "A sensor-based waste bin that segregates waste and includes a composting unit.",
     tech: ["ESP32", "Edge Impulse", "Python", "C++"],
     link: "https://github.com/SSSwetha25/smart-waste-segregation-system.git",
+     image: smartbin, 
   },
-  {
-    title: "Task Manager",
-    description: "A to-do list app with drag & drop, persistent storage, and dark mode.",
-    tech: ["React", "Tailwind"],
-    link: "https://github.com/SSSwetha25/To-Do-App.git",
-  },
+  // {
+  //   title: "Task Manager",
+  //   description: "A to-do list app with drag & drop, persistent storage, and dark mode.",
+  //   tech: ["React", "Tailwind"],
+  //   link: "https://github.com/SSSwetha25/To-Do-App.git",
+  //    image: "/images/smart-bin.png", 
+  // },
   
 ];
 
@@ -50,6 +58,11 @@ export default function Projects() {
               key={index}
               className="bg-white/30 dark:bg-gray-900/30 backdrop-blur-md border border-white/20 dark:border-gray-700/40 rounded-2xl shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 p-6 flex flex-col justify-between"
             >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover rounded-xl mb-4"
+              />
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
                   {project.title}
