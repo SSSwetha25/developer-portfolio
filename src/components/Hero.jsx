@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Twitter } from "lucide-react";
-
+import { Link } from "react-router-dom";
 
 
 export default function Hero() {
@@ -32,12 +32,12 @@ export default function Hero() {
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-10 max-w-xl mx-auto">
           I'm a web developer passionate about building clean, responsive, and creative interfaces that leave a lasting impression.
         </p>
-        <a
-          href="/projects"
+        <Link
+          to="/projects"
           className="inline-block px-10 py-3 bg-blue-600 text-white text-lg font-semibold rounded-xl shadow-lg hover:scale-105 hover:bg-blue-700 dark:hover:bg-blue-500 transform transition-all duration-300"
         >
           <b>View My Work</b> 
-        </a>
+        </Link>
         <div className="flex justify-center space-x-6 mt-6">
   <a
     href="https://github.com/SSSwetha25"
