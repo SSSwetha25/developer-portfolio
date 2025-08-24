@@ -9,7 +9,7 @@ export default function About() {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-tr from-indigo-200 via-sky-200 to-blue-300 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 px-6 py-20 transition-colors">
+    <section className="pt-28 min-h-screen flex items-center justify-center bg-gradient-to-tr from-indigo-200 via-sky-200 to-blue-300 dark: pt-28 from-gray-900 dark:via-gray-800 dark:to-gray-900 px-6 py-20 transition-colors ">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

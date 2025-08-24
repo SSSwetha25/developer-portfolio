@@ -19,7 +19,7 @@ export default function App() {
 
   return (
     <Router>
-      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen transition-colors duration-300 ease-in-out">
+      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen transition-colors duration-300 ease-in-out ">
         <Navbar toggleDarkMode={() => setDarkMode((prev) => !prev)} darkMode={darkMode} />
 
         <Routes>
