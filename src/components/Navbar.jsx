@@ -24,7 +24,7 @@ export default function Navbar({ toggleDarkMode, darkMode }) {
           </Link>
         ))}
 
-        <button
+        {/* <button
           onClick={toggleDarkMode}
           className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:scale-110 transition-transform"
           aria-label="Toggle Dark Mode"
@@ -34,12 +34,12 @@ export default function Navbar({ toggleDarkMode, darkMode }) {
           ) : (
             <Moon className="w-5 h-5 text-blue-600" />
           )}
-        </button>
+        </button> */}
       </div>
 
       {/* Mobile Hamburger */}
       <div className="md:hidden flex items-center gap-3">
-        <button
+        {/* <button
           onClick={toggleDarkMode}
           className="p-2 rounded-full bg-gray-200 dark:bg-gray-700"
           aria-label="Toggle Dark Mode"
@@ -49,7 +49,7 @@ export default function Navbar({ toggleDarkMode, darkMode }) {
           ) : (
             <Moon className="w-5 h-5 text-blue-600" />
           )}
-        </button>
+        </button> */}
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
