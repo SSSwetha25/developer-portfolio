@@ -9,7 +9,7 @@ export default function Navbar({ toggleDarkMode, darkMode }) {
     <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 w-[95%] md:w-[90%] bg-white/30 dark:bg-gray-900/30 backdrop-blur-md border border-white/20 dark:border-gray-700/40 rounded-2xl px-6 py-4 shadow-xl flex items-center justify-between z-50 transition-all">
       
       <h1 className="text-2xl font-bold text-gray-900 dark:text-white tracking-tight">
-        My<span className="text-blue-600 dark:text-blue-400">Portfolio</span>
+        <span className="text-blue-600 dark:text-blue-400">&lt;SS/&gt;</span>
       </h1>
 
       {/* Desktop Links */}
