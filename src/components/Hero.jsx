@@ -26,7 +26,8 @@ export default function Hero() {
           Hi, I'm <span className="text-blue-600 dark:text-blue-400">Swetha</span>
         </h1>
         <p className="text-sm uppercase tracking-widest text-blue-500 dark:text-blue-400 mb-2">
-  Frontend Developer • UI/UX Enthusiast • Learner
+  {/* Frontend Developer • UI/UX Enthusiast • Learner */}
+  Web Developer • Tech Enthusiast • Learner
 </p>
 
         <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-10 max-w-xl mx-auto">
