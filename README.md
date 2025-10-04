@@ -17,7 +17,7 @@ This portfolio is built with a modern frontend stack:
 
 ## 📁 Features
 
-- Clean, responsive layout with dark/light mode support  
+- Clean, responsive layout  
 - Project showcase section  
 - About me and contact sections  
 - Smooth animations using **Framer Motion**  
