@@ -48,7 +48,9 @@ export default function About() {
               "TypeScript",
               "React",
               "Tailwind CSS",
-              
+              "Nodejs",
+              "Python",
+              "C++",
               "Git",
               "GitHub",
               "Figma",
