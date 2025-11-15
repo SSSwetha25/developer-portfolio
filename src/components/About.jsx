@@ -78,9 +78,12 @@ export default function About() {
           </h3>
           <div className="space-y-4">
             <div className="bg-white/40 dark:bg-gray-800/40 p-5 sm:p-6 rounded-2xl border border-white/30 dark:border-gray-700/50 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h4 className="text-xl sm:text-2xl font-semibold text-blue-800 dark:text-blue-300 mb-3">
+              <h4 className="text-xl sm:text-2xl font-semibold text-blue-800 dark:text-blue-300 mb-2">
                 Web Development Intern — Leora Infotech Pvt. Ltd.
               </h4>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mb-3 italic">
+                June 2025 - July 2025
+              </p>
               <p className="text-sm sm:text-base text-gray-700 dark:text-gray-300 mb-3">
                 <strong className="text-blue-700 dark:text-blue-400">Technologies:</strong> Django, Python, Prompt Engineering
               </p>
