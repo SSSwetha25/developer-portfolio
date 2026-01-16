@@ -12,7 +12,7 @@ This portfolio is built with a modern frontend stack:
 - 🎨 **Tailwind CSS** – Utility-first styling for rapid and responsive design  
 - ⚡ **Vite** – Fast development and build tool  
 - 🌐 **React Router DOM** – Client-side routing  
-- 🧩 **Lucide Icons** – Clean, open-source icon library  
+- 🧩 **Lucide Icons** – Clean, open-source icon library 
 ---
 
 ## 📁 Features
