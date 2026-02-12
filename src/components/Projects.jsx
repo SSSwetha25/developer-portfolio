@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import pharma from "../assets/pharma-bot.png";
 import aslbot from "../assets/asl-chatbot-image.png";
 import skswap from "../assets/skillswap.png";
 import smartbin from "../assets/smartbin.png";
@@ -27,13 +27,13 @@ const projects = [
     link: "https://github.com/SSSwetha25/smart-waste-segregation-system.git",
      image: smartbin, 
   },
-  // {
-  //   title: "Task Manager",
-  //   description: "A to-do list app with drag & drop, persistent storage, and dark mode.",
-  //   tech: ["React", "Tailwind"],
-  //   link: "https://github.com/SSSwetha25/To-Do-App.git",
-  //    image: "/images/smart-bin.png", 
-  // },
+  {
+    title: "Agentic AI for Pharmaceutical Innovation",
+    description: "Agentic AI for Pharmaceutical Innovation is an agentic decision-support system that uses a Master–Worker agent architecture to analyze early-stage pharma opportunities from clinical, IP, and market angles.",
+    tech: ["Python", "Streamlit","Pandas"],
+    link: "https://github.com/SSSwetha25/Pharma-agentic-ai.git",
+     image: pharma, 
+  },
   
 ];
 
