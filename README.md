@@ -20,5 +20,5 @@ This portfolio is built with a modern frontend stack:
 - Clean, responsive layout  
 - Project showcase section  
 - About me and contact sections  
-- Smooth animations using **Framer Motion**  
+- Smooth animations using Framer Motion
 - Fully responsive and optimized for desktop and mobile  
