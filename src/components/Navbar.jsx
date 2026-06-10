@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { Moon, Sun, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar({ toggleDarkMode, darkMode }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,32 +25,12 @@ export default function Navbar({ toggleDarkMode, darkMode }) {
           </Link>
         ))}
 
-        {/* <button
-          onClick={toggleDarkMode}
-          className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:scale-110 transition-transform"
-          aria-label="Toggle Dark Mode"
-        >
-          {darkMode ? (
-            <Sun className="w-5 h-5 text-yellow-400" />
-          ) : (
-            <Moon className="w-5 h-5 text-blue-600" />
-          )}
-        </button> */}
+        <ThemeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </div>
 
       {/* Mobile Hamburger */}
       <div className="md:hidden flex items-center gap-3">
-        {/* <button
-          onClick={toggleDarkMode}
-          className="p-2 rounded-full bg-gray-200 dark:bg-gray-700"
-          aria-label="Toggle Dark Mode"
-        >
-          {darkMode ? (
-            <Sun className="w-5 h-5 text-yellow-400" />
-          ) : (
-            <Moon className="w-5 h-5 text-blue-600" />
-          )}
-        </button> */}
+        <ThemeToggle darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
